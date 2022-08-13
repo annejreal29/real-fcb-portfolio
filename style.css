@@ -1,0 +1,96 @@
+
+Syntax for CSS
+
+Selector {
+	property : value;
+}
+*/
+
+/* CSS - Specificity Rule
+Higher Priority
+(Id)
+(Class)
+(Element)
+
+Least Priority (Universal)
+
+*/
+
+/*Universal Selector*/
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+/* Element Selector */
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	border: 5px solid #61b0b7;
+	border-radius: 150px;
+}
+
+/*Id Selector id = #*/
+#landing {
+	/*vh view-height or percentage*/
+	height: 90vh;
+	display: flex; /*used to arranged or column the page*/
+	/*these properties are dependent to displax flex*/
+	flex-direction: column;	
+	justify-content: center; /*horizontally aligned*/
+	align-items: center; /*center aligned*/
+}
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+/*Class Selector class = "."*/
+.tools {
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	width: 75%;
+	margin : 20px;
+	padding: 25px;
+}
+
+h2 {
+	color: #007bff;
+	text-shadow: 1.5px 1.5px white;
+}
+
+/*make scrolling smooth*/
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+BOOTSTRAP SPACES
+m >> margin
+p >> padding
+
+t >> top
+s >> start or left
+e >> end or right
+b >> bottom
+
+x >> x-axis
+y >> y-axis
+
+1-5 auto
+
+sample:
+	mx-auto (margin x-axis auto)
